@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'EBGaramond';
+  src: local('EBGaramond'), url(./assets/fonts/EBGaramond-Regular.ttf) format('truetype');
+}
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  
+  to{
+    opacity: 1;
+  }
+}
