@@ -11,7 +11,8 @@ const Container = styled.div`
   min-height: 100vh;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   background-image: url(${bg});
 `;
