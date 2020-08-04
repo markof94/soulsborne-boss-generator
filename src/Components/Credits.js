@@ -2,14 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
+    
     font-size: 16px;
     color: white;
     font-family: EBGaramond;
     
     text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    margin-top: 32px;
 
     transition: all 0.1s ease;
 
@@ -34,7 +33,7 @@ class Credits extends React.PureComponent {
         return (
             <Container>
                 <div>
-                    {`Send word suggestions to `}
+                    {`Send word suggestions and hate mail to `}
                     <Email>
                         {`markofajler@gmail.com`}
                     </Email>

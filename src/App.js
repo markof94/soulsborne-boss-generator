@@ -4,7 +4,7 @@ import BossName from './Components/BossName'
 import styled from 'styled-components'
 import bg from './assets/bg.jpg'
 import Title from './Components/Title'
-import Credits from './Components/Credits'
+import Footer from './Components/Footer'
 
 const Container = styled.div`
   width: 100vw;
@@ -17,16 +17,31 @@ const Container = styled.div`
   background-image: url(${bg});
 `;
 
-function App() {
-  return (
-    <Container>
-      <Title>
-        {`Soulsborne Boss Name Generator`}
-      </Title>
-      <BossName />
-      <Credits />
-    </Container>
-  );
+class App extends React.Component {
+  state = {
+    generatedName: ""
+  }
+
+  updateName = (name) => {
+    this.setState({ generatedName: name })
+  }
+
+  render() {
+    return (
+      <Container>
+        <Title>
+          {`Soulsborne Boss Name Generator`}
+        </Title>
+        <BossName
+          updateName={this.updateName}
+        />
+        <Footer
+          generatedName={this.state.generatedName}
+        />
+      </Container>
+    );
+  }
+
 }
 
 export default App;

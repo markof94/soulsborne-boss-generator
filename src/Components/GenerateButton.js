@@ -6,15 +6,17 @@ const Container = styled.div`
     color: white;
     font-family: EBGaramond;
     user-select: none;
-    
+
     
     text-shadow: 0 0 2px rgba(0, 0, 0, 1);
 
     padding: 4px 64px;
-    margin: 24px;
+    margin: 0 24px;
 
     border-top: 2px solid #251d1b;
     border-bottom: 2px solid #251d1b;
+
+    -webkit-tap-highlight-color: transparent;
 
     transition: all 0.1s ease;
 
@@ -36,6 +38,7 @@ class GenerateButton extends React.Component {
                 onClick={this.props.onClick}
             >
                 {"GENERATE"}
+                
             </Container>
         )
     }

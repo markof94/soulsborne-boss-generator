@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Title = styled.div`
-    font-size: calc(5vmin + 12px);
+    font-size: calc(3vmin + 12px);
     color: white;
     font-family: EBGaramond;
     user-select: none;

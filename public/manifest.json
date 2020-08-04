@@ -1,6 +1,7 @@
 {
-  "short_name": "Boss Generator",
-  "name": "Soulsborne Boss Name Generator",
+  "short_name": "Soulsborne Boss Generator",
+  "name": "Soulsborne Boss Generator",
+  "description": "Generate your own Soulsborne boss name!",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,8 +14,10 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
 }

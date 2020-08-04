@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import BossGenerator from '../Helpers/BossGenerator'
 import GenerateButton from './GenerateButton'
+import Checkbox from './Checkbox'
 
 const Container = styled.div`
     display: flex;
@@ -9,7 +10,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 16px;
-    
 `;
 
 const Name = styled.div`
@@ -17,11 +17,14 @@ const Name = styled.div`
     text-align: center;
     color: white;
     font-family: EBGaramond;
-    user-select: none;
     text-shadow: 0 0 2px rgba(0, 0, 0, 1);
-    margin: 15vh 0;
+    margin:128px 0;
     min-height: 100px;
-    
+
+    ::selection {
+        color: rgba(255, 255, 255, 0.35);
+        background: #4f1f0b;
+      }
 `;
 
 class BossName extends React.Component {
@@ -29,15 +32,23 @@ class BossName extends React.Component {
         super();
         this.bossGenerator = new BossGenerator();
 
+        const bossName = this.bossGenerator.generateBoss();
+        localStorage.setItem('generatedName', bossName);
+
         this.state = {
-            boss: this.bossGenerator.generateBoss(),
-            doAnimation: false
+            boss: bossName,
+            doAnimation: false,
+            isWeirdChecked: false
         }
     }
 
     handleClick = () => {
+        const bossName = this.state.isWeirdChecked ? this.bossGenerator.generateWeirdBoss() : this.bossGenerator.generateBoss();
+
+        this.props.updateName(bossName)
+
         this.setState({
-            boss: this.bossGenerator.generateBoss(),
+            boss: bossName,
             doAnimation: true
         })
     }
@@ -46,6 +57,12 @@ class BossName extends React.Component {
         this.setState({
             doAnimation: false
         })
+    }
+
+    toggleWeirdness = () => {
+        this.setState(prevState => ({
+            isWeirdChecked: !prevState.isWeirdChecked
+        }))
     }
 
     render() {
@@ -66,6 +83,10 @@ class BossName extends React.Component {
                 <GenerateButton
                     onClick={() => this.handleClick()}
 
+                />
+                <Checkbox
+                    onClick={this.toggleWeirdness}
+                    isChecked={this.state.isWeirdChecked}
                 />
             </Container>
         )
