@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c56161db307272bdd74853f521461931",
+    "revision": "d43d6cfb0f62be2800448f99244260cb",
     "url": "/soulsborne-boss-generator/index.html"
   },
   {
