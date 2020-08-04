@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/soulsborne-boss-generator/precache-manifest.9c1acbd65a4291e848e7f3480d97bb5c.js"
+  "/soulsborne-boss-generator/precache-manifest.5a85895ca5d7758d7612e5cee8065aec.js"
 );
 
 self.addEventListener('message', (event) => {

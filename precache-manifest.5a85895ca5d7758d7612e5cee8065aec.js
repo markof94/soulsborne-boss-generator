@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d43d6cfb0f62be2800448f99244260cb",
+    "revision": "bf93d60e859d4ffdd5e966760d972d4a",
     "url": "/soulsborne-boss-generator/index.html"
   },
   {
-    "revision": "7b5b0163220d1bd6bd87",
+    "revision": "9e37d62ba202e7acfd0d",
     "url": "/soulsborne-boss-generator/static/css/main.871b3c56.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soulsborne-boss-generator/static/js/2.aa790c30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7b5b0163220d1bd6bd87",
-    "url": "/soulsborne-boss-generator/static/js/main.45d84606.chunk.js"
+    "revision": "9e37d62ba202e7acfd0d",
+    "url": "/soulsborne-boss-generator/static/js/main.97a29905.chunk.js"
   },
   {
     "revision": "98a3745dc8342b7e4f49",
