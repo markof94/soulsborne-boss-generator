@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/soulsborne-boss-generator/static/css/main.871b3c56.chunk.css",
-    "main.js": "/soulsborne-boss-generator/static/js/main.5407be7d.chunk.js",
-    "main.js.map": "/soulsborne-boss-generator/static/js/main.5407be7d.chunk.js.map",
+    "main.js": "/soulsborne-boss-generator/static/js/main.2e9aaded.chunk.js",
+    "main.js.map": "/soulsborne-boss-generator/static/js/main.2e9aaded.chunk.js.map",
     "runtime-main.js": "/soulsborne-boss-generator/static/js/runtime-main.8c1ac228.js",
     "runtime-main.js.map": "/soulsborne-boss-generator/static/js/runtime-main.8c1ac228.js.map",
     "static/js/2.aa790c30.chunk.js": "/soulsborne-boss-generator/static/js/2.aa790c30.chunk.js",
     "static/js/2.aa790c30.chunk.js.map": "/soulsborne-boss-generator/static/js/2.aa790c30.chunk.js.map",
     "index.html": "/soulsborne-boss-generator/index.html",
-    "precache-manifest.f22686f581e6883f36421f59500ce79b.js": "/soulsborne-boss-generator/precache-manifest.f22686f581e6883f36421f59500ce79b.js",
+    "precache-manifest.9d8b65456947a3d9347d02fdfd478af1.js": "/soulsborne-boss-generator/precache-manifest.9d8b65456947a3d9347d02fdfd478af1.js",
     "service-worker.js": "/soulsborne-boss-generator/service-worker.js",
     "static/css/main.871b3c56.chunk.css.map": "/soulsborne-boss-generator/static/css/main.871b3c56.chunk.css.map",
     "static/js/2.aa790c30.chunk.js.LICENSE.txt": "/soulsborne-boss-generator/static/js/2.aa790c30.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.8c1ac228.js",
     "static/js/2.aa790c30.chunk.js",
     "static/css/main.871b3c56.chunk.css",
-    "static/js/main.5407be7d.chunk.js"
+    "static/js/main.2e9aaded.chunk.js"
   ]
 }
